@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Pocopay Test</string>
+
+	<string name="welcome_login">Login</string>
+	<string name="welcome_sign_up">Sign up</string>
+
+	<string name="login_title">Login</string>
+	<string name="login_sign_in">Login</string>
+	<string name="login_email">Email</string>
+	<string name="login_password">Password</string>
+
+	<string name="sign_up_next">Next &gt;</string>
+	<string name="sign_up_sign_up">Sign Up &gt;</string>
+	<string name="sign_up_text_about_next_steps">The text about next steps…</string>
+	<string name="sign_up_email">Email</string>
+	<string name="sign_up_password">Password</string>
+	<string name="sign_up_terms">I accept Terms of service</string>
+	<string name="sign_up_country">Country</string>
+	<string name="sign_up_city">City</string>
+	<string name="sign_up_zip_code">Zip code</string>
+
+	<string name="error_empty_credentials">Please enter login and password</string>
+	<string name="error_terms_not_accepted">Please accept Terms of service</string>
+	<string name="error_wrong_credentials">Wrong credentials</string>
+	<string name="error_password_too_short">Password too short</string>
+	<string name="error_user_exists">User already exists</string>
+	<string name="error_timeout">Connection timeout</string>
+	<string name="error_unknown">Unexpected error occurred</string>
+
+	<string name="success_login_successful">Login successful</string>
+	<string name="success_sign_up_successful">Congratulations for registering</string>
+	<string name="success_finish">Finish</string>
+
+</resources>

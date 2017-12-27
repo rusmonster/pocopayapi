@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<data>
+
+		<import type="android.view.View" />
+
+		<variable name="model" type="com.example.dkalita.pocopay.viewmodel.SignUpViewModel" />
+
+	</data>
+
+	<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<ProgressBar
+				android:id="@+id/signUpProgressView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:visibility="@{safeUnbox(model.isInProgress) ? View.VISIBLE : View.GONE}" />
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+			<FrameLayout
+					android:id="@+id/signUpContainer"
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:visibility="@{safeUnbox(model.isInProgress) ? View.INVISIBLE : View.VISIBLE}" />
+
+			<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#ddd">
+
+				<Button
+						android:id="@+id/signUpButtonView"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="end"
+						android:text="@{model.buttonText}"
+						android:onClick="@{() -> model.onButtonClick()}"
+						style="?android:attr/borderlessButtonStyle" />
+
+			</FrameLayout>
+
+		</LinearLayout>
+
+	</FrameLayout>
+
+</layout>
